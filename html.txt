@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Aldiyar Kyzyrkhanov's first project </title>
+<link src="C:\Users\5\Desktop\Assignment 3\js">
+</head>
+<body>
+</body>
+</html>

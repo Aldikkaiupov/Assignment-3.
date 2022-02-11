@@ -1,0 +1,143 @@
+var name = prompt("What is your name?") 
+name = name.toLocaleLowerCase() 
+alert("Hello " + name.slice(0, 1). toUpperCase() 
++ name.slice(1, name.length)) 
+ 
+Task 2 
+Function movingLeft(){ 
+While(frontIsClear()){ 
+  Move (); 
+      PutBeeper (); 
+  Move(); 
+  Move(); 
+  PutBeeper(); 
+  Move(); 
+  } 
+} 
+Function movingRight(){ 
+  While (frontIsClear()){ 
+     putBeeper(); 
+    move(); 
+    move(); 
+    putBeeper(); 
+    move(); 
+    move(); 
+    putBeeper(); 
+ } 
+} 
+Function left (){ 
+  turnLeft(); 
+   move(); 
+  turnLeft(); 
+} 
+Function right (){ 
+  turnRight(); 
+   move(); 
+  turnRight(); 
+} 
+Function main(){ 
+  movingRight(); 
+  left(); 
+  movingLeft(); 
+  right(); 
+  movingRight(); 
+  left(); 
+  movingLeft(); 
+  right(); 
+  movingRight(); 
+} 
+
+Task 3 
+ 
+function moveToTheEnd(){ 
+    while(frontIsClear()){ 
+        move(); 
+    } 
+} 
+function rightStep (){ 
+    turnRight (); 
+    move (); 
+} 
+function leftStep (){ 
+    turnleft (); 
+    move (); 
+} 
+function rightLeftStep (){ 
+    turnRight (); 
+    turnleft (); 
+    turnRight (); 
+} 
+function main(){ 
+    turnLeft(); 
+    moveToTheEnd(); 
+    rightLeftRight(); 
+    move(); 
+    rightStep(); 
+    rightLeftRight(); 
+    leftStep (); 
+    turnLeft(); 
+    moveToTheEnd(); 
+    rightLeftRight(); 
+    leftStep(); 
+    leftStep(); 
+    move(); 
+    leftStep(); 
+    rightStep(); 
+    move(); 
+    rightStep(); 
+    move(); 
+    rightStep(); 
+    leftStep(); 
+} 
+Task 4   
+var age = prompt("Enter your age: ") 
+function lifeInWeeksMothDays(age){ 
+    age = 90 - age; 
+    console.log("You have" + age * 356 + "days" + age * 52 + "weeks" + "and " + age * 12 + "month left.");   
+} 
+lifeInWeeksMothDays(age); 
+ 
+Task 6  
+ 
+var year = prompt("Enter a year: ") 
+var isLeap = false; 
+function findLeap(year){ 
+    if(year%4 == 0){ 
+        if(year%100 == 0){ 
+            if(year%400 == 0) isLeap = true; 
+            else isLeap = false; 
+        } 
+        else isLeap  = true; 
+    } 
+    else isLeap = false; 
+    return isLeap; 
+} 
+var result = findLeap(year) 
+if(result) alert("Leap year.") 
+else alert ("Not leap year.") 
+ 
+ 
+Task 7  
+ 
+const people = ["Aruzhan", "Bexultan", "Madina", "Azhar", "Dilnaz"] 
+var random_person = Math.floor(Math.random() * students.length) 
+function who_will_have_a_cat(random_person){ 
+    return students[random_person] + "will have a cat" 
+} 
+who_will_have_a_cat(random_person) 
+ 
+ 
+Task 8  
+ 
+function fibonGenerator(n){ 
+    var fibon = [0, 1] 
+    var a = 0; 
+    var b = 1; 
+    for(i=2; i<n; i++) { 
+        fibon[i] = fibon[a] + fibon[b] 
+        a++; 
+        b++; 
+        } 
+        return fibon 
+} 
+console.log(fibonGenerator(5))
